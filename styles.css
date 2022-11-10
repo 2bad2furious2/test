@@ -1,0 +1,29 @@
+@keyframes slide {
+    0% {
+        background-position-x: 0;
+    }
+    50% {
+        background-position-x: 500px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+
+/*
+   inspiration (https://w3bits.com/rainbow-text/)
+ */
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slide infinite 5s;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 40vh;
+}
+
+body {
+    margin: 0;
+    background-color: #444;
+}
